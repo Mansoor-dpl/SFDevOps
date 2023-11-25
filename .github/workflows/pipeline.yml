@@ -38,11 +38,11 @@ jobs:
         INSTANCE_URL: ${{ secrets.SALESFORCEPRODINSTANCEURL }}
       run: sfdx force:auth:jwt:grant --clientid $CLIENT_ID --jwtkeyfile ./buildfiles/server.key --username $USERNAME --instanceurl $INSTANCE_URL -a prod
 
-    # Convert to Deploy Source
+    # Convert to Deploy Source change
     - name: Convert to Deploy Source
       run: sfdx force:source:convert -r ./force-app -d ./toDeploy
     
-    # Run Validation of Deploy Source
+    # Run Validation of Deploy Source change
     - name: Run Validation on Deploy Source
       run: sfdx force:mdapi:deploy -l RunLocalTests -c -d ./toDeploy -u prod -w 10
     
