@@ -1,4 +1,4 @@
-public class XmlParserExample {
+public class AccountData {
     
     public class AccountData {
         public String id;
@@ -8,7 +8,7 @@ public class XmlParserExample {
         public String rating;
     }
 
-    public static List<AccountData> parseXml(String xmlContent) {
+    public static List<AccountData> AccountData(String xmlContent) {
         List<AccountData> accountList = new List<AccountData>();
         
         Dom.Document doc = new Dom.Document();
