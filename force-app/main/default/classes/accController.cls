@@ -1,6 +1,10 @@
-public with sharing class AccountController {
-    public static List<Account> getAllActiveAccount() {
-      return [SELECT Id, Name, Active__c FROM Account WHERE Active__c = 'Yes' WITH SECURITY_ENFORCED];
+public class AccountDataRetrieval {
+
+    public static List<Account> getAccounts() {
+        // Query for accounts with non-null Phone, BillingState, and Rating
+        List<Account> accounts = [SELECT Id, Name, Phone, BillingState, Rating FROM Account
+                                  WHERE Phone != null AND BillingState != null AND Rating != null];
+
+        return accounts;
     }
-    //Lets see your solution in your orgs to end
-  }
+}
