@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
- <package xmlns="http://soap.sforce.com/2006/04/metadata">
+ <Package xmlns="http://soap.sforce.com/2006/04/metadata">
      <types>
          <members>*</members>
          <name>ApexClass</name>
@@ -16,5 +16,5 @@
          <members>*</members>
          <name>CustomObject</name>
      </types>
-     <version>48.0</version>
- </package>
+     <version>59.0</version>
+ </Package>

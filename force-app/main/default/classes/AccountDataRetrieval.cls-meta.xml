@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>48.0</apiVersion>
-    <status>Active</status>
-</package>
+<Accounts>
+    <Account>
+        <Id>001xx000003DfAKAA0</Id>
+        <Name>Acme Corporation</Name>
+        <Phone>(555) 123-4567</Phone>
+        <BillingState>CA</BillingState>
+        <Rating>Hot</Rating>
+    </Account>
+    <Account>
+        <Id>001xx000003DfALAA0</Id>
+        <Name>XYZ Company</Name>
+        <Phone>(555) 987-6543</Phone>
+        <BillingState>NY</BillingState>
+        <Rating>Cold</Rating>
+    </Account>
+</Accounts>
