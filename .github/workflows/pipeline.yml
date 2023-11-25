@@ -24,7 +24,7 @@ jobs:
 
     # Setup Node
     - name: Setup Node
-      uses: actions/setup-node@v1v21.2.0
+      uses: actions/setup-node@v21
     
     # Install SFDX CLI
     - name: Install SFDX CLI
