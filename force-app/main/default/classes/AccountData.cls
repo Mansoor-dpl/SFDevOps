@@ -8,7 +8,7 @@ public class AccountData {
         public String rating;
     }
 
-    public static List<AccountData> AccountData(String xmlContent) {
+    public static List<AccountData> parseXml(String xmlContent) {
         List<AccountData> accountList = new List<AccountData>();
         
         Dom.Document doc = new Dom.Document();
