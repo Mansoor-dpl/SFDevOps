@@ -1,7 +1,7 @@
 /**
 * @author Mansoor Ahmad
 * @date 2023
-* @description Enum that contain the supported log levels Mansoor
+* @description Enum that contain the supported log levels for Mansoor
 */
 public enum LogLevel 
 {
